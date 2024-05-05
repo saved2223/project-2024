@@ -1,7 +1,6 @@
 package ds.project.model.student;
 
 import ds.project.model.person.Person;
-import ds.project.model.person.PersonRoleEnum;
 import ds.project.model.training.Training;
 import lombok.Getter;
 import lombok.Setter;

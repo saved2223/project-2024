@@ -2,16 +2,21 @@ package ds.project.model.person;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
 import java.util.UUID;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "person")
-public class Person {
+public class Person implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -42,8 +47,34 @@ public class Person {
     @Column(name = "city", nullable = false, length = 20)
     private String city;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "person_role_id", nullable = false, columnDefinition = "int default 1") // по умолчанию - USER
-    private PersonRole personRole;
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Set<PersonRole> roles;
 
+    @Column(name = "password", nullable = false, length = 30)
+    private String password;
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return getRoles();
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
 }
