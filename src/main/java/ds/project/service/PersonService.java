@@ -1,7 +1,9 @@
 package ds.project.service;
 
+import ds.project.dto.MessageDto;
 import ds.project.dto.PersonRegisterDto;
 import ds.project.mapper.PersonRegisterMapper;
+import ds.project.model.Message;
 import ds.project.model.person.Person;
 import ds.project.model.person.PersonRole;
 import ds.project.repository.PersonRepository;
@@ -14,6 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -55,4 +58,5 @@ public class PersonService  implements UserDetailsService {
         person.setPassword(bCryptPasswordEncoder.encode(person.getPassword()));
         return personRepository.save(person);
     }
+
 }
