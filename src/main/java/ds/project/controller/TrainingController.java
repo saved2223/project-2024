@@ -1,7 +1,6 @@
 package ds.project.controller;
 
-import ds.project.dto.TrainingDto;
-import ds.project.model.training.Training;
+import ds.project.dto.TrainingCreationDto;
 import ds.project.service.TrainingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +17,7 @@ public class TrainingController {
     private TrainingService trainingService;
 
     @PostMapping("addTraining")
-    public ResponseEntity<TrainingDto> addTraining(@RequestBody TrainingDto training) {
+    public ResponseEntity<TrainingCreationDto> addTraining(@RequestBody TrainingCreationDto training) {
         return ResponseEntity.ok(trainingService.createTraining(training));
     }
 }

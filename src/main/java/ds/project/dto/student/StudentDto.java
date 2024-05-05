@@ -1,6 +1,7 @@
 package ds.project.dto.student;
 
 import ds.project.model.student.StudyStatusEnum;
+import ds.project.model.training.TrainingStatusEnum;
 import lombok.Value;
 
 import java.io.Serializable;
@@ -26,5 +27,20 @@ public class StudentDto implements Serializable {
     String speciality;
     Byte course;
     StudyStatusEnum studyStatusStudy_status;
-    Set<UUID> trainingIds;
+    Set<TrainingDto> trainings;
+
+    /**
+     * DTO for {@link ds.project.model.training.Training}
+     */
+    @Value
+    public static class TrainingDto implements Serializable {
+        UUID id;
+        String name;
+        String description;
+        Date startDate;
+        Date endDate;
+        Date registrationDeadline;
+        Integer trainingStatusId;
+        TrainingStatusEnum trainingStatusTrainingStatus;
+    }
 }

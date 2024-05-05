@@ -77,4 +77,21 @@ public class Person implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", telegram='" + telegram + '\'' +
+                ", addInfo='" + addInfo + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", city='" + city + '\'' +
+                ", roles=" + roles +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

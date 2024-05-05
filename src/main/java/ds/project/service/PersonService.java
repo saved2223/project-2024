@@ -1,5 +1,7 @@
 package ds.project.service;
 
+import ds.project.dto.PersonRegisterDto;
+import ds.project.mapper.PersonRegisterMapper;
 import ds.project.model.person.Person;
 import ds.project.model.person.PersonRole;
 import ds.project.repository.PersonRepository;
@@ -25,6 +27,9 @@ public class PersonService  implements UserDetailsService {
     @Autowired
     private PasswordEncoder bCryptPasswordEncoder;
 
+    @Autowired
+    private PersonRegisterMapper personRegisterMapper;
+
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -35,7 +40,8 @@ public class PersonService  implements UserDetailsService {
         return person;
     }
 
-    public Person saveNewPerson(Person person) {
+    public Person registerPerson(PersonRegisterDto personRegisterDto) {
+        Person person = personRegisterMapper.toEntity(personRegisterDto);
         //todo проверка на существующего
         Optional<PersonRole> personRole = personRoleRepository.findByName("ROLE_USER");
         if (personRole.isPresent()){
