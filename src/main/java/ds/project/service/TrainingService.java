@@ -10,6 +10,9 @@ import ds.project.repository.TrainingStatusRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+import java.util.UUID;
+
 @Service
 public class TrainingService {
     @Autowired
@@ -18,16 +21,25 @@ public class TrainingService {
     private TrainingStatusRepository trainingStatusRepository;
     @Autowired
     private TrainingCreationMapper trainingMapper;
+    @Autowired
+    GitlabService gitlabService;
 
 
     public TrainingCreationDto createTraining(TrainingCreationDto trainingDto) {
-        TrainingStatus trainingNotStartedStatus = trainingStatusRepository
-                .findByTrainingStatus(TrainingStatusEnum.NOT_STARTED)
-                .get();
         Training training = trainingMapper.toEntity(trainingDto);
-        training.setTrainingStatus(trainingNotStartedStatus);
+        training.setTrainingStatus(getTrainingStatusByName(TrainingStatusEnum.NOT_STARTED));
         trainingRepository.save(training);
         return trainingMapper.toDto(training);
+    }
 
+    public void startTraining(UUID trainingId) {
+        Training training = trainingRepository.getReferenceById(trainingId);
+        training.setTrainingStatus(getTrainingStatusByName(TrainingStatusEnum.STARTED));
+        trainingRepository.save(training);
+        gitlabService.createGitlabUsersForTraining(trainingId);
+    }
+
+    private TrainingStatus getTrainingStatusByName(TrainingStatusEnum trainingStatusEnum) {
+        return trainingStatusRepository.findByTrainingStatus(trainingStatusEnum).get();
     }
 }

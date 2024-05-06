@@ -1,7 +1,7 @@
 package ds.project.controller;
 
 import ds.project.dto.TrainingCreationDto;
-import ds.project.gitlab.GitlabConnection;
+import ds.project.service.GitlabService;
 import ds.project.service.TrainingService;
 import org.gitlab4j.api.GitLabApiException;
 import org.gitlab4j.api.models.Project;
@@ -19,7 +19,7 @@ public class TrainingController {
     private TrainingService trainingService;
 
     @Autowired
-    private GitlabConnection gitlabConnection;
+    private GitlabService gitlabConnection;
 
     @PostMapping("addTraining")
     public ResponseEntity<TrainingCreationDto> addTraining(@RequestBody TrainingCreationDto training) {

@@ -18,8 +18,8 @@ public class Message {
     @Column(name = "id", nullable = false)
     private UUID id;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "person_from_id", nullable = false)
+    @ManyToOne(optional = true)
+    @JoinColumn(name = "person_from_id", nullable = true)
     private Person personFrom;
 
     @ManyToOne(optional = false)
