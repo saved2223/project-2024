@@ -80,15 +80,17 @@ public class GitlabService {
             for (Project forkedProject : forkedProjects) {
                 Commit lastCommit = getLastCommitOfAListOfCommits(
                         gitLabApi.getCommitsApi().getCommits(forkedProject.getPath()));
-                dtos.add(new CheckLessonTasksDTO(
-                        task.getId(),
-                        task.getName(),
-                        forkedProject.getOwner().getId().toString(),
-                        forkedProject.getOwner().getUsername(),
-                        (Date) lastCommit.getCreatedAt(),
-                        lastCommit.getCommitterName(),
-                        lastCommit.getWebUrl()
-                        ));
+                if (lastCommit != null) {
+                    dtos.add(new CheckLessonTasksDTO(
+                            task.getId(),
+                            task.getName(),
+                            forkedProject.getOwner().getId().toString(),
+                            forkedProject.getOwner().getUsername(),
+                            (Date) lastCommit.getCreatedAt(),
+                            lastCommit.getCommitterName(),
+                            lastCommit.getWebUrl()
+                    ));
+                }
             }
             return dtos;
         } catch (GitLabApiException e) {
@@ -97,6 +99,7 @@ public class GitlabService {
     }
 
     private Commit getLastCommitOfAListOfCommits(List<Commit> commits) {
+        if (commits.isEmpty()) return null;
         commits.sort(Comparator.comparing(Commit::getCreatedAt).reversed());
         return commits.get(0);
     }

@@ -23,8 +23,9 @@ public class SpringSecurityConfig {
                 .authorizeHttpRequests((authorize) -> {
                     authorize
                             .antMatchers("/admin/**").hasRole("ADMIN")
-                            .antMatchers("/user/**").hasRole("USER")
+                            .antMatchers("/user/**").hasAnyRole("USER", "ADMIN")
                             .antMatchers("/public/**").permitAll()
+                            .antMatchers("/anyUser/**").hasAnyRole("ADMIN", "USER")
                             .anyRequest().authenticated();
                 }).httpBasic(Customizer.withDefaults());
         return http.build();

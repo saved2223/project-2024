@@ -26,8 +26,6 @@ public class TrainingController {
         return ResponseEntity.ok(trainingService.createTraining(training));
     }
 
-    @GetMapping("projects")
-    public ResponseEntity<List<Project>> getProjects() throws GitLabApiException {
-        return ResponseEntity.ok(gitlabConnection.connect());
-    }
+
+
 }

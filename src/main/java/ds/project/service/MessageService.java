@@ -41,4 +41,13 @@ public class MessageService {
         }
     }
 
+    public void sendMessageToPerson(String text, Person personFrom, Person personTo){
+        Message message = new Message();
+        message.setText(text);
+        message.setPersonFrom(personFrom);
+        message.setPersonTo(personTo);
+        message.setTimestamp(Timestamp.from(Instant.now()));
+        messageRepository.save(message);
+    }
+
 }

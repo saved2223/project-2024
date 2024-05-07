@@ -7,6 +7,7 @@ import ds.project.repository.LessonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -22,7 +23,12 @@ public class LessonService {
         gitlabService.forkAllTaskReposToActiveUsers(lesson.getTasks());
     }
 
-    public CheckLessonTasksDTO checkLessonTasks(UUID lessonId) {
-        List<Task>
+    public List<CheckLessonTasksDTO> checkLessonTasksByStringLessonUuid(String lessonId) {
+        List<CheckLessonTasksDTO> agregatedCheckingDtos = new ArrayList<>();
+        for (Task unpassedTask: lessonRepository.findUnPassedTasksByLessonUuid(lessonId)) {
+            agregatedCheckingDtos.addAll(gitlabService.getAllCommitsForTask(unpassedTask));
+        }
+        return agregatedCheckingDtos;
+
     }
 }
