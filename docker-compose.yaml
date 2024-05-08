@@ -1,5 +1,18 @@
 version: '3.9'
 services:
+  app:
+    image: 'lukemb123/docker-spring-boot:latest'
+    build:
+      context: .
+    container_name: app
+    depends_on:
+      - db
+  db:
+    image: 'postgres:latest'
+    container_name: db
+    environment:
+      - POSTGRES_USER=compose-postgres
+      - POSTGRES_PASSWORD=compose-postgres
   gitlab:
     container_name: gitlab
     image: gitlab/gitlab-ce:latest
