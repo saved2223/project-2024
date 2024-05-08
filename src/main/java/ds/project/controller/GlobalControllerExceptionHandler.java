@@ -1,6 +1,5 @@
 package ds.project.controller;
 
-import ds.project.exception.AlmostAStudentException;
 import ds.project.exception.CustomException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

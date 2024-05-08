@@ -1,0 +1,14 @@
+ds.project
+ds.project.config
+ds.project.controller
+ds.project.dto
+ds.project.dto.student
+ds.project.exception
+ds.project.mapper
+ds.project.model
+ds.project.model.mark
+ds.project.model.person
+ds.project.model.student
+ds.project.model.training
+ds.project.repository
+ds.project.service

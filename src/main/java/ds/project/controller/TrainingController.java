@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/admin/")
@@ -18,12 +19,15 @@ public class TrainingController {
     @Autowired
     private TrainingService trainingService;
 
-    @Autowired
-    private GitlabService gitlabConnection;
-
     @PostMapping("addTraining")
     public ResponseEntity<TrainingCreationDto> addTraining(@RequestBody TrainingCreationDto training) {
         return ResponseEntity.ok(trainingService.createTraining(training));
+    }
+
+    @GetMapping("startTraining")
+    public ResponseEntity<?> startTraining(@RequestParam String trainingId) {
+        trainingService.startTraining(UUID.fromString(trainingId));
+        return ResponseEntity.ok().build();
     }
 
 

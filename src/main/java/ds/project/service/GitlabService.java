@@ -14,6 +14,7 @@ import org.gitlab4j.api.models.Commit;
 import org.gitlab4j.api.models.Project;
 import org.gitlab4j.api.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -31,12 +32,13 @@ public class GitlabService {
     private StudentRepository studentRepository;
     @Autowired
     private MessageService messageService;
+    @Autowired
+    private Environment environment;
 
-
-    private GitLabApi gitLabApi;
+    private final GitLabApi gitLabApi;
 
     public GitlabService() {
-        gitLabApi = new GitLabApi("http://172.30.16.1/", "glpat-d2hFM_Rn1vB_n8kpzrHC"); //todo сделать из проперти
+        gitLabApi = new GitLabApi("http://172.30.16.1/", "glpat-d2hFM_Rn1vB_n8kpzrHC");
     }
 
     public void createGitlabUsersForTraining(UUID trainingId) {
@@ -45,7 +47,7 @@ public class GitlabService {
             User user = new User();
             user.setName(student.getPerson().getName());
             user.setEmail(student.getPerson().getEmail());
-            user.setUsername(student.getPerson().getUsername()); //todo что-то придумать с отчисленными
+            user.setUsername(student.getPerson().getUsername());
             try {
                 gitLabApi.getUserApi().createUser(user, defaultPass, false);
             } catch (GitLabApiException e) {
