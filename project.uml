@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/saved2223/Documents/study/project-2024/src/main/java/ds/project</OriginalElement>
+  <nodes>
+    <node x="3298.5" y="5331.0">ds.project.controller.GlobalControllerExceptionHandler</node>
+    <node x="2748.5" y="2540.5">ds.project.dto.PersonRegisterDto</node>
+    <node x="3478.5" y="2759.5">ds.project.repository.PersonRepository</node>
+    <node x="2199.0" y="973.5">ds.project.model.person.Person</node>
+    <node x="345.5" y="4561.5">ds.project.service.StudentService</node>
+    <node x="3051.0" y="3546.5">ds.project.dto.CheckLessonTasksDTO</node>
+    <node x="2617.0" y="4299.0">ds.project.service.TaskService</node>
+    <node x="3963.5" y="5308.0">ds.project.dto.AllMarksRecordDTO</node>
+    <node x="2583.5" y="366.0">ds.project.model.training.Training</node>
+    <node x="3523.0" y="4936.0">ds.project.service.LessonService</node>
+    <node x="686.5" y="3331.0">ds.project.mapper.StudentRegisterDtoMapper</node>
+    <node x="1298.5" y="5167.5">ds.project.controller.TrainingController</node>
+    <node x="1169.5" y="3344.0">ds.project.repository.TrainingRepository</node>
+    <node x="3658.0" y="4631.0">ds.project.repository.LessonRepository</node>
+    <node x="2941.5" y="3344.0">ds.project.exception.GitlabException</node>
+    <node x="2861.0" y="5319.5">ds.project.config.SpringSecurityConfig</node>
+    <node x="1578.5" y="4561.5">ds.project.service.MarksService</node>
+    <node x="-187.0" y="3744.0">ds.project.exception.ToLateTrainingEnrollingException</node>
+    <node x="1506.5" y="2713.0">ds.project.model.mark.MarkResult</node>
+    <node x="341.5" y="3344.0">ds.project.exception.AlmostAStudentException</node>
+    <node x="3097.5" y="4515.5">ds.project.service.GitlabService</node>
+    <node x="1328.5" y="4901.5">ds.project.service.TrainingService</node>
+    <node x="1299.5" y="3744.0">ds.project.exception.WrongMarkException</node>
+    <node x="1823.0" y="3319.5">ds.project.repository.StudentRepository</node>
+    <node x="3970.0" y="4195.5">ds.project.dto.TaskForMarkDTO</node>
+    <node x="3820.0" y="3673.0">ds.project.service.PersonService</node>
+    <node x="2866.5" y="2211.0">ds.project.repository.MessageRepository</node>
+    <node x="2287.5" y="7.0">ds.project.model.person.PersonRole</node>
+    <node x="890.0" y="4631.0">ds.project.repository.TrainingStatusRepository</node>
+    <node x="1421.5" y="584.5">ds.project.model.mark.MarkResultEnum</node>
+    <node x="3377.5" y="3673.0">ds.project.service.MessageService</node>
+    <node x="1258.5" y="4195.5">ds.project.dto.MessageDto</node>
+    <node x="1173.0" y="1272.5">ds.project.dto.student.StudentRegisterDto</node>
+    <node x="3650.5" y="2211.0">ds.project.repository.PersonRoleRepository</node>
+    <node x="2613.5" y="3731.0">ds.project.repository.TaskRepository</node>
+    <node x="3324.0" y="2049.5">ds.project.model.Message</node>
+    <node x="2430.0" y="2095.5">ds.project.model.Task</node>
+    <node x="486.5" y="3708.0">ds.project.mapper.StudentMapper</node>
+    <node x="1674.5" y="2003.5">ds.project.dto.student.StudentDto.TrainingDto</node>
+    <node x="2566.0" y="53.0">ds.project.model.training.TrainingStatus</node>
+    <node x="1733.0" y="1065.5">ds.project.dto.student.StudentDto</node>
+    <node x="1450.0" y="3261.5">ds.project.dto.StudentMarkDto</node>
+    <node x="3076.0" y="2748.0">ds.project.mapper.MessageMapper</node>
+    <node x="2274.5" y="3331.0">ds.project.repository.MarkRepository</node>
+    <node x="3240.5" y="3238.5">ds.project.model.Lesson</node>
+    <node x="2041.0" y="3731.0">ds.project.repository.MarkResultRepository</node>
+    <node x="858.5" y="3708.0">ds.project.mapper.TrainingCreationMapper</node>
+    <node x="-192.5" y="2632.5">ds.project.dto.TrainingCreationDto</node>
+    <node x="20.0" y="3344.0">ds.project.exception.WrongTrainingIdException</node>
+    <node x="3432.0" y="4264.5">ds.project.controller.PersonController</node>
+    <node x="332.5" y="4913.0">ds.project.controller.StudentController</node>
+    <node x="2117.5" y="2506.0">ds.project.model.student.Student</node>
+    <node x="2562.0" y="4924.5">ds.project.controller.TaskController</node>
+    <node x="1571.5" y="-235.5">ds.project.model.training.TrainingStatusEnum</node>
+    <node x="3529.0" y="5167.5">ds.project.controller.LessonController</node>
+    <node x="-27.0" y="2187.5">ds.project.exception.CustomException</node>
+    <node x="3184.0" y="5191.0">ds.project.Application</node>
+    <node x="1688.5" y="3500.5">ds.project.model.mark.Mark</node>
+    <node x="3829.5" y="2748.0">ds.project.mapper.PersonRegisterMapper</node>
+    <node x="1958.0" y="573.0">ds.project.model.student.StudyStatus</node>
+    <node x="1778.5" y="64.5">ds.project.model.student.StudyStatusEnum</node>
+    <node x="1176.5" y="5331.0">ds.project.config.SpringFoxConfig</node>
+    <node x="176.5" y="3744.0">ds.project.exception.AlreadyInTrainingException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ds.project.model.training.TrainingStatus" target="ds.project.model.training.TrainingStatusEnum" relationship="TO_ONE">
+      <point x="0.0" y="-85.0" />
+      <point x="2727.0" y="-22.0" />
+      <point x="1707.0" y="-22.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="ds.project.dto.student.StudentDto.TrainingDto" target="ds.project.model.training.TrainingStatusEnum" relationship="TO_ONE">
+      <point x="0.0" y="-234.5" />
+      <point x="1867.0" y="1978.0" />
+      <point x="1707.0" y="1978.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="ds.project.service.GitlabService" target="ds.project.exception.GitlabException" relationship="CREATE">
+      <point x="-104.75" y="-142.5" />
+      <point x="3202.25" y="4478.0" />
+      <point x="3187.0" y="4478.0" />
+      <point x="3187.0" y="4458.0" />
+      <point x="3027.0" y="4458.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="ds.project.exception.ToLateTrainingEnrollingException" target="ds.project.exception.CustomException" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-33.0" y="3198.0" />
+      <point x="67.0" y="3198.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="ds.project.service.PersonService" target="ds.project.model.person.PersonRole" relationship="CREATE">
+      <point x="83.5" y="-85.0" />
+      <point x="4070.5" y="3638.0" />
+      <point x="4207.0" y="3638.0" />
+      <point x="4207.0" y="338.0" />
+      <point x="2486.6666666666665" y="338.0" />
+      <point x="79.66666666666666" y="131.0" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.dto.StudentMarkDto" relationship="CREATE">
+      <point x="-114.25" y="-96.5" />
+      <point x="1692.75" y="4538.0" />
+      <point x="1667.0" y="4538.0" />
+      <point x="1667.0" y="4038.0" />
+      <point x="1547.0" y="4038.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.mapper.StudentMapper" relationship="TO_ONE">
+      <point x="100.75" y="-96.5" />
+      <point x="647.75" y="4538.0" />
+      <point x="647.0" y="4538.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.repository.MarkRepository" relationship="TO_ONE">
+      <point x="114.25" y="-96.5" />
+      <point x="1921.25" y="4538.0" />
+      <point x="2007.0" y="4538.0" />
+      <point x="2007.0" y="4098.0" />
+      <point x="2527.0" y="4098.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.mapper.StudentRegisterDtoMapper" relationship="TO_ONE">
+      <point x="100.75" y="-96.5" />
+      <point x="647.75" y="4538.0" />
+      <point x="647.0" y="4538.0" />
+      <point x="647.0" y="3818.0" />
+      <point x="827.0" y="3818.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.controller.StudentController" target="ds.project.service.StudentService" relationship="TO_ONE">
+      <point x="0.0" y="-85.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="ds.project.model.person.Person" target="ds.project.model.person.PersonRole" relationship="TO_MANY">
+      <point x="84.0" y="-464.5" />
+      <point x="2451.0" y="938.0" />
+      <point x="2407.0" y="938.0" />
+      <point x="0.0" y="131.0" />
+    </edge>
+    <edge source="ds.project.model.person.PersonRole" target="ds.project.model.person.Person" relationship="TO_MANY">
+      <point x="-79.66666666666666" y="131.0" />
+      <point x="2327.3333333333335" y="938.0" />
+      <point x="2283.0" y="938.0" />
+      <point x="-84.0" y="-464.5" />
+    </edge>
+    <edge source="ds.project.service.TrainingService" target="ds.project.service.GitlabService" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="1547.0" y="4858.0" />
+      <point x="3307.0" y="4858.0" />
+      <point x="0.0" y="142.5" />
+    </edge>
+    <edge source="ds.project.service.TrainingService" target="ds.project.repository.TrainingStatusRepository" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="1547.0" y="4878.0" />
+      <point x="1127.0" y="4878.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.service.GitlabService" target="ds.project.repository.PersonRepository" relationship="TO_ONE">
+      <point x="104.75" y="-142.5" />
+      <point x="3411.75" y="4238.0" />
+      <point x="3567.0" y="4238.0" />
+      <point x="3567.0" y="4158.0" />
+      <point x="3787.0" y="4158.0" />
+      <point x="3787.0" y="2858.0" />
+      <point x="3627.0" y="2858.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ds.project.model.mark.MarkResult" target="ds.project.model.mark.MarkResultEnum" relationship="TO_ONE">
+      <point x="0.0" y="-85.0" />
+      <point x="1647.0" y="2678.0" />
+      <point x="1547.0" y="2678.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="ds.project.service.MessageService" target="ds.project.repository.MessageRepository" relationship="TO_ONE">
+      <point x="-94.75" y="-85.0" />
+      <point x="3472.25" y="3198.0" />
+      <point x="3247.0" y="3198.0" />
+      <point x="3247.0" y="2858.0" />
+      <point x="3047.0" y="2858.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.service.MessageService" target="ds.project.repository.PersonRepository" relationship="TO_ONE">
+      <point x="-94.75" y="-85.0" />
+      <point x="3472.25" y="3198.0" />
+      <point x="3247.0" y="3198.0" />
+      <point x="3247.0" y="3158.0" />
+      <point x="3787.0" y="3158.0" />
+      <point x="3787.0" y="2858.0" />
+      <point x="3627.0" y="2858.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ds.project.controller.PersonController" target="ds.project.service.MessageService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="3627.0" y="3858.0" />
+      <point x="3567.0" y="3858.0" />
+      <point x="0.0" y="85.0" />
+    </edge>
+    <edge source="ds.project.service.PersonService" target="ds.project.repository.PersonRepository" relationship="TO_ONE">
+      <point x="-83.5" y="-85.0" />
+      <point x="3903.5" y="3638.0" />
+      <point x="3907.0" y="3638.0" />
+      <point x="3907.0" y="3618.0" />
+      <point x="3787.0" y="3618.0" />
+      <point x="3787.0" y="2858.0" />
+      <point x="3627.0" y="2858.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ds.project.service.TrainingService" target="ds.project.repository.TrainingRepository" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="1547.0" y="4178.0" />
+      <point x="1267.0" y="4178.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="ds.project.service.PersonService" target="ds.project.repository.PersonRoleRepository" relationship="TO_ONE">
+      <point x="-83.5" y="-85.0" />
+      <point x="3903.5" y="3638.0" />
+      <point x="3907.0" y="3638.0" />
+      <point x="3907.0" y="2878.0" />
+      <point x="3807.0" y="2878.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.service.LessonService" target="ds.project.service.GitlabService" relationship="TO_ONE">
+      <point x="0.0" y="-62.0" />
+      <point x="3787.0" y="4878.0" />
+      <point x="3307.0" y="4878.0" />
+      <point x="0.0" y="142.5" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.exception.WrongMarkException" relationship="CREATE">
+      <point x="-114.25" y="-96.5" />
+      <point x="1692.75" y="4538.0" />
+      <point x="1667.0" y="4538.0" />
+      <point x="1667.0" y="4038.0" />
+      <point x="1407.0" y="4038.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="ds.project.model.mark.Mark" target="ds.project.model.mark.MarkResult" relationship="TO_ONE">
+      <point x="0.0" y="-257.5" />
+      <point x="1807.0" y="3298.0" />
+      <point x="2087.0" y="3298.0" />
+      <point x="2087.0" y="3118.0" />
+      <point x="1717.25" y="3118.0" />
+      <point x="70.25" y="85.0" />
+    </edge>
+    <edge source="ds.project.model.mark.Mark" target="ds.project.model.Task" relationship="TO_ONE">
+      <point x="0.0" y="-257.5" />
+      <point x="1807.0" y="3298.0" />
+      <point x="2087.0" y="3298.0" />
+      <point x="2087.0" y="3138.0" />
+      <point x="2567.0" y="3138.0" />
+      <point x="0.0" y="142.5" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.exception.WrongTrainingIdException" relationship="CREATE">
+      <point x="-100.75" y="-96.5" />
+      <point x="446.25" y="4538.0" />
+      <point x="307.0" y="4538.0" />
+      <point x="307.0" y="3798.0" />
+      <point x="147.0" y="3798.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="ds.project.controller.TrainingController" target="ds.project.service.TrainingService" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="ds.project.model.Lesson" target="ds.project.model.training.Training" relationship="TO_ONE">
+      <point x="0.0" y="-119.5" />
+      <point x="3347.0" y="3218.0" />
+      <point x="2727.0" y="3218.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+    <edge source="ds.project.exception.AlmostAStudentException" target="ds.project.exception.CustomException" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="467.0" y="3198.0" />
+      <point x="67.0" y="3198.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.repository.MarkResultRepository" relationship="TO_ONE">
+      <point x="114.25" y="-96.5" />
+      <point x="1921.25" y="4538.0" />
+      <point x="2007.0" y="4538.0" />
+      <point x="2007.0" y="4098.0" />
+      <point x="2247.0" y="4098.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.controller.StudentController" target="ds.project.service.MarksService" relationship="TO_ONE">
+      <point x="0.0" y="-85.0" />
+      <point x="547.0" y="4838.0" />
+      <point x="1807.0" y="4838.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.service.MessageService" relationship="TO_ONE">
+      <point x="114.25" y="-96.5" />
+      <point x="1921.25" y="4538.0" />
+      <point x="2007.0" y="4538.0" />
+      <point x="2007.0" y="4138.0" />
+      <point x="3567.0" y="4138.0" />
+      <point x="0.0" y="85.0" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.mapper.TrainingCreationMapper" relationship="TO_ONE">
+      <point x="100.75" y="-96.5" />
+      <point x="647.75" y="4538.0" />
+      <point x="647.0" y="4538.0" />
+      <point x="647.0" y="3858.0" />
+      <point x="867.0" y="3858.0" />
+      <point x="867.0" y="3838.0" />
+      <point x="1047.0" y="3838.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="ds.project.exception.WrongTrainingIdException" target="ds.project.exception.CustomException" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="147.0" y="3198.0" />
+      <point x="67.0" y="3198.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="ds.project.model.student.StudyStatus" target="ds.project.model.student.StudyStatusEnum" relationship="TO_ONE">
+      <point x="0.0" y="-85.0" />
+      <point x="2107.0" y="538.0" />
+      <point x="1907.0" y="538.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="ds.project.service.GitlabService" target="ds.project.service.MessageService" relationship="TO_ONE">
+      <point x="104.75" y="-142.5" />
+      <point x="3411.75" y="4238.0" />
+      <point x="3567.0" y="4238.0" />
+      <point x="0.0" y="85.0" />
+    </edge>
+    <edge source="ds.project.service.GitlabService" target="ds.project.repository.StudentRepository" relationship="TO_ONE">
+      <point x="104.75" y="-142.5" />
+      <point x="3411.75" y="4238.0" />
+      <point x="3567.0" y="4238.0" />
+      <point x="3567.0" y="3998.0" />
+      <point x="2007.0" y="3998.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ds.project.exception.WrongMarkException" target="ds.project.exception.CustomException" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="1407.0" y="3198.0" />
+      <point x="67.0" y="3198.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.repository.StudentRepository" relationship="TO_ONE">
+      <point x="114.25" y="-96.5" />
+      <point x="1921.25" y="4538.0" />
+      <point x="2007.0" y="4538.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ds.project.model.student.Student" target="ds.project.model.student.StudyStatus" relationship="TO_ONE">
+      <point x="0.0" y="-292.0" />
+      <point x="2247.0" y="1998.0" />
+      <point x="2107.0" y="1998.0" />
+      <point x="0.0" y="85.0" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.repository.TrainingRepository" relationship="TO_ONE">
+      <point x="100.75" y="-96.5" />
+      <point x="647.75" y="4538.0" />
+      <point x="647.0" y="4538.0" />
+      <point x="647.0" y="3878.0" />
+      <point x="1267.0" y="3878.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="ds.project.service.MessageService" target="ds.project.mapper.MessageMapper" relationship="TO_ONE">
+      <point x="-94.75" y="-85.0" />
+      <point x="3472.25" y="3198.0" />
+      <point x="3247.0" y="3198.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="ds.project.exception.GitlabException" target="ds.project.exception.CustomException" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="3027.0" y="3198.0" />
+      <point x="67.0" y="3198.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.model.mark.Mark" relationship="CREATE">
+      <point x="-114.25" y="-96.5" />
+      <point x="1692.75" y="4538.0" />
+      <point x="1667.0" y="4538.0" />
+      <point x="1667.0" y="4038.0" />
+      <point x="1807.0" y="4038.0" />
+      <point x="0.0" y="257.5" />
+    </edge>
+    <edge source="ds.project.model.Message" target="ds.project.model.person.Person" relationship="TO_ONE">
+      <point x="0.0" y="-188.5" />
+      <point x="3447.0" y="2018.0" />
+      <point x="2247.0" y="2018.0" />
+      <point x="2247.0" y="1938.0" />
+      <point x="2367.0" y="1938.0" />
+      <point x="0.0" y="464.5" />
+    </edge>
+    <edge source="ds.project.dto.student.StudentDto" target="ds.project.model.student.StudyStatusEnum" relationship="TO_ONE">
+      <point x="0.0" y="-372.5" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="ds.project.controller.PersonController" target="ds.project.service.PersonService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="3627.0" y="4178.0" />
+      <point x="3987.0" y="4178.0" />
+      <point x="0.0" y="85.0" />
+    </edge>
+    <edge source="ds.project.model.Lesson" target="ds.project.model.Task" relationship="TO_MANY">
+      <point x="0.0" y="-119.5" />
+      <point x="3347.0" y="3218.0" />
+      <point x="2727.0" y="3218.0" />
+      <point x="2727.0" y="3158.0" />
+      <point x="2567.0" y="3158.0" />
+      <point x="0.0" y="142.5" />
+    </edge>
+    <edge source="ds.project.exception.AlreadyInTrainingException" target="ds.project.exception.CustomException" relationship="GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="307.0" y="3198.0" />
+      <point x="67.0" y="3198.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.exception.AlmostAStudentException" relationship="CREATE">
+      <point x="-100.75" y="-96.5" />
+      <point x="446.25" y="4538.0" />
+      <point x="307.0" y="4538.0" />
+      <point x="307.0" y="3798.0" />
+      <point x="467.0" y="3798.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="ds.project.model.student.Student" target="ds.project.model.training.Training" relationship="TO_MANY">
+      <point x="0.0" y="-292.0" />
+      <point x="2247.0" y="1958.0" />
+      <point x="2727.0" y="1958.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+    <edge source="ds.project.model.training.Training" target="ds.project.model.training.TrainingStatus" relationship="TO_ONE">
+      <point x="0.0" y="-292.0" />
+      <point x="0.0" y="85.0" />
+    </edge>
+    <edge source="ds.project.dto.student.StudentRegisterDto" target="ds.project.model.student.StudyStatusEnum" relationship="TO_ONE">
+      <point x="0.0" y="-165.5" />
+      <point x="1347.0" y="538.0" />
+      <point x="1907.0" y="538.0" />
+      <point x="0.0" y="73.5" />
+    </edge>
+    <edge source="ds.project.dto.student.StudentDto" target="ds.project.dto.student.StudentDto.TrainingDto" relationship="TO_MANY">
+      <point x="-87.0" y="372.5" />
+      <point x="1820.0" y="1958.0" />
+      <point x="1738.6666666666667" y="1958.0" />
+      <point x="-128.33333333333331" y="-234.5" />
+    </edge>
+    <edge source="ds.project.controller.LessonController" target="ds.project.service.LessonService" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="0.0" y="62.0" />
+    </edge>
+    <edge source="ds.project.service.GitlabService" target="ds.project.dto.CheckLessonTasksDTO" relationship="CREATE">
+      <point x="-104.75" y="-142.5" />
+      <point x="3202.25" y="4478.0" />
+      <point x="3187.0" y="4478.0" />
+      <point x="0.0" y="211.5" />
+    </edge>
+    <edge source="ds.project.service.PersonService" target="ds.project.mapper.PersonRegisterMapper" relationship="TO_ONE">
+      <point x="-83.5" y="-85.0" />
+      <point x="3903.5" y="3638.0" />
+      <point x="3907.0" y="3638.0" />
+      <point x="3907.0" y="2878.0" />
+      <point x="4007.0" y="2878.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="ds.project.service.TrainingService" target="ds.project.mapper.TrainingCreationMapper" relationship="TO_ONE">
+      <point x="0.0" y="-96.5" />
+      <point x="1547.0" y="4878.0" />
+      <point x="867.0" y="4878.0" />
+      <point x="867.0" y="3838.0" />
+      <point x="1047.0" y="3838.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="ds.project.controller.TaskController" target="ds.project.service.TaskService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.exception.ToLateTrainingEnrollingException" relationship="CREATE">
+      <point x="-100.75" y="-96.5" />
+      <point x="446.25" y="4538.0" />
+      <point x="307.0" y="4538.0" />
+      <point x="307.0" y="3798.0" />
+      <point x="-33.0" y="3798.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="ds.project.model.mark.Mark" target="ds.project.model.student.Student" relationship="TO_ONE">
+      <point x="0.0" y="-257.5" />
+      <point x="1807.0" y="3298.0" />
+      <point x="2087.0" y="3298.0" />
+      <point x="2087.0" y="3118.0" />
+      <point x="2247.0" y="3118.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+    <edge source="ds.project.model.mark.Mark" target="ds.project.model.person.Person" relationship="TO_ONE">
+      <point x="0.0" y="-257.5" />
+      <point x="1807.0" y="3298.0" />
+      <point x="2087.0" y="3298.0" />
+      <point x="2087.0" y="2018.0" />
+      <point x="2247.0" y="2018.0" />
+      <point x="2247.0" y="1938.0" />
+      <point x="2367.0" y="1938.0" />
+      <point x="0.0" y="464.5" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.repository.TaskRepository" relationship="TO_ONE">
+      <point x="114.25" y="-96.5" />
+      <point x="1921.25" y="4538.0" />
+      <point x="2007.0" y="4538.0" />
+      <point x="2007.0" y="4118.0" />
+      <point x="2807.0" y="4118.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.service.MarksService" target="ds.project.model.mark.MarkResult" relationship="CREATE">
+      <point x="-114.25" y="-96.5" />
+      <point x="1692.75" y="4538.0" />
+      <point x="1667.0" y="4538.0" />
+      <point x="1667.0" y="3178.0" />
+      <point x="1576.75" y="3178.0" />
+      <point x="-70.25" y="85.0" />
+    </edge>
+    <edge source="ds.project.model.student.Student" target="ds.project.model.person.Person" relationship="TO_ONE">
+      <point x="0.0" y="-292.0" />
+      <point x="2247.0" y="1938.0" />
+      <point x="2367.0" y="1938.0" />
+      <point x="0.0" y="464.5" />
+    </edge>
+    <edge source="ds.project.service.LessonService" target="ds.project.repository.LessonRepository" relationship="TO_ONE">
+      <point x="0.0" y="-62.0" />
+      <point x="3787.0" y="4898.0" />
+      <point x="3847.0" y="4898.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.service.TaskService" target="ds.project.repository.TaskRepository" relationship="TO_ONE">
+      <point x="0.0" y="-39.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.exception.AlreadyInTrainingException" relationship="CREATE">
+      <point x="-100.75" y="-96.5" />
+      <point x="446.25" y="4538.0" />
+      <point x="307.0" y="4538.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="ds.project.service.MessageService" target="ds.project.model.Message" relationship="CREATE">
+      <point x="94.75" y="-85.0" />
+      <point x="3661.75" y="3178.0" />
+      <point x="3447.0" y="3178.0" />
+      <point x="0.0" y="188.5" />
+    </edge>
+    <edge source="ds.project.controller.TaskController" target="ds.project.service.MarksService" relationship="TO_ONE">
+      <point x="0.0" y="-73.5" />
+      <point x="2807.0" y="4898.0" />
+      <point x="1807.0" y="4898.0" />
+      <point x="0.0" y="96.5" />
+    </edge>
+    <edge source="ds.project.dto.student.StudentDto.TrainingDto" target="ds.project.dto.student.StudentDto" relationship="INNER_CLASS">
+      <point x="128.33333333333331" y="-234.5" />
+      <point x="1995.3333333333335" y="1978.0" />
+      <point x="1994.0" y="1978.0" />
+      <point x="87.0" y="372.5" />
+    </edge>
+    <edge source="ds.project.service.StudentService" target="ds.project.repository.StudentRepository" relationship="TO_ONE">
+      <point x="100.75" y="-96.5" />
+      <point x="647.75" y="4538.0" />
+      <point x="647.0" y="4538.0" />
+      <point x="647.0" y="4058.0" />
+      <point x="2007.0" y="4058.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.2010504943502825" showDependencies="true" x="2196.9697141602637" y="1985.6" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
